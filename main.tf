@@ -1,5 +1,5 @@
 resource "aws_db_subnet_group" "rds" {
-  name       = "${name_prefix}-subnet-group"
+  name       = "${local.name_prefix}-subnet-group"
   subnet_ids = var.subnet_ids
   tags = var.tags
 }
